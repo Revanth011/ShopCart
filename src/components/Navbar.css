@@ -1,0 +1,43 @@
+.nav {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background: rgb(252, 252, 252);
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.cart span {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.search input {
+    font-size: 1.2rem;
+    outline: none;
+    background: transparent;
+    border: 2px solid black;
+    padding: 0.2rem;
+}
+
+.search input:hover {
+    border: 2px solid rgb(112, 112, 112);
+}
+
+@media screen and (max-width: 600px) {
+    .site-logo {
+        display: none;
+    }
+}

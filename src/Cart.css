@@ -1,0 +1,27 @@
+.cartItems {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: row;
+    padding: 1rem;
+}
+
+.cartItems-title {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.backLink {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cartItems {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
