@@ -25,7 +25,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true)
         async function fetchProducts() {
-            const resp = await fetch(`http://localhost:8000/products?page=${page}`);
+            const resp = await fetch(`https://shop-cart-server-pimw.vercel.app/products?page=${page}`);
             const data = await resp.json();
             setProducts(prev => [...prev, ...data]);
             setFiltered(prev => [...prev, ...data]);
